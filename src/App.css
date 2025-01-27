@@ -1,0 +1,123 @@
+/* App.css */
+
+.app {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-card h3 {
+  margin: 0 0 10px;
+}
+.user-card:hover {
+  background-color: aliceblue;
+}
+.card-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.card-actions button {
+  color: darkcyan;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-actions button:hover {
+  background-color: lightgrey;
+}
+
+.add-button {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: darkgreen;
+}
+.pagination {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+.active-page {
+  background-color: darkcyan;
+  cursor: pointer;
+  border: none;
+  padding: 5px 8px;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.not-active {
+  cursor: pointer;
+  border: solid 1px;
+  padding: 5px 8px;
+  color: black;
+  font-size: 12px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .user-card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .user-card .card-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .user-card .card-actions button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .user-card {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .user-card .card-actions button {
+    width: 100%;
+  }
+}
