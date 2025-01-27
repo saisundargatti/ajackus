@@ -6,7 +6,7 @@ export const putCall = async (updatedUser, activeId, setUsers) => {
         method: "PUT",
         body: JSON.stringify(updatedUser),
         headers: {
-          "Content-type": "application/json; charset=UTF-8",
+          "Content-type": "application/json",
         },
       }
     );
