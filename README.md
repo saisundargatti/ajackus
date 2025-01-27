@@ -46,4 +46,45 @@ npm run dev
 ```
 The app will run on http://localhost:3000/
 
+## How It Works
+
+### 1. Viewing Users
+- Users are fetched via an API call (`fetchUsers`).
+- The list is paginated to show 5 users per page.
+
+### 2. Adding Users
+- Clicking on the "Add User" button displays a form.
+- On form submission, the new user is added to the list dynamically.
+
+### 3. Editing Users
+- Clicking the edit icon on a user opens an inline edit form.
+- Changes are saved when the user submits the form.
+
+### 4. Deleting Users
+- Clicking the delete icon removes the user from the list.
+
+### 5. Pagination
+- Pagination buttons allow users to navigate through the list.
+- The active page is visually highlighted.
+
+---
+
+## Folder Highlights
+
+### API Calls
+- **get.js**: Contains the logic for fetching users.
+- **post js**: Contains the logic for adding a user 
+- **put.js**: Contains the logic for editing users.
+- **delete.js**: Provides functionality for deleting users via an API call.
+
+### Components
+- **AddUser**: Handles the form for adding new users.
+- **EditUser**: Handles inline editing of user details.
+
+
+## Possible Improvements
+- Enable filtering and searching users by name or email.
+- Enhance the UI for better accessibility and design.
+
+
 
